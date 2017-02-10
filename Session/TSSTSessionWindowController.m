@@ -719,7 +719,7 @@
 - (IBAction)launchJumpPanel:(id)sender
 {
 	[jumpField setIntValue: [pageController selectionIndex] + 1];
-    [self.window beginSheet: jumpPanel completionHandler:^(NSModalResponse returnCode) { }];
+    [self.window beginSheet: jumpPanel completionHandler:^(NSModalResponse returnCode) {}];
 }
 
 
