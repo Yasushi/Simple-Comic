@@ -468,6 +468,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA7257E208A6CDEB006A2A19 /* Build configuration list for PBXNativeTarget "Simple Comic" */;
 			buildPhases = (
+				77F6AC3E1E52AC93005E3AC1 /* Update Version String */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				280B6BBA0A1BB34600EE91B0 /* CopyFiles */,
@@ -573,6 +574,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77F6AC3E1E52AC93005E3AC1 /* Update Version String */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Version String";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion `git rev-parse --short HEAD`\" Info.plist\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
